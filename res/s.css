@@ -1,0 +1,104 @@
+@font-face {
+  font-family: LiberationSansBold;
+  src: url("fonts/LiberationSans-Bold.ttf"); }
+@font-face {
+  font-family: LiberationSansRegular;
+  src: url("fonts/LiberationSans-Regular.ttf"); }
+a {
+  text-decoration: none;
+  color: #c7c7c7; }
+  a:hover {
+    color: #e0e0e0; }
+  a.active {
+    color: #e0e0e0; }
+
+header {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#aea7ff+0,282c34+100 */
+  background: linear-gradient(180deg, #aea7ff 0%, #282c34 100%);
+  background: linear-gradient(180deg, #aea7ff 0%, #aea7ff 10%, #282c34 100%); }
+  header nav {
+    font-family: 'arial';
+    font-size: 1.3rem; }
+    header nav ul {
+      max-width: 23rem;
+      margin: 0 auto;
+      padding: 1rem 0;
+      list-style: none outside;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      justify-content: space-evenly; }
+      header nav ul li a {
+        font-family: LiberationSansRegular, serif, Arial, Helvetica, sans-serif;
+        display: inline-block;
+        background-color: #282C34;
+        padding: 0.66rem 1rem; }
+  header .greeting {
+    padding: 2rem 0 4rem;
+    margin: 0 auto;
+    font-size: 1.33rem;
+    max-width: 16rem; }
+    header .greeting .hi {
+      font-family: LiberationSansBold, Arial, Helvetica, sans-serif;
+      line-height: 1.3; }
+      header .greeting .hi span {
+        background-color: #282C34;
+        color: #e0e0e0;
+        display: inline;
+        padding: 0.45rem;
+        -webkit-box-decoration-break: clone;
+        -moz-box-decoration-break: clone;
+        -ms-box-decoration-break: clone;
+        box-decoration-break: clone; }
+
+main {
+  height: 400px;
+  color: #e0e0e0;
+  background-color: #282C34; }
+  main .deck {
+    margin: 0 auto;
+    max-width: 900px;
+    display: flex;
+    flex-direction: row;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-content: space-evenly; }
+  main .card {
+    max-width: 100%;
+    padding: 0.66rem;
+    margin: 0 10px 20px 10px;
+    background-color: #aea7ff; }
+
+@media screen and (min-width: 480px) {
+  /* BIG phone size */
+  header .greeting {
+    padding: 2rem 0 5rem;
+    margin: 0 15%;
+    font-size: 1.55rem;
+    min-width: 18rem; }
+
+  main .deck {
+    flex-direction: column; } }
+@media screen and (min-width: 640px) {
+  /* tablet size */
+  header .greeting {
+    padding: 1rem 0 6rem;
+    margin: 0 20%;
+    font-size: 1.75rem;
+    min-width: 20rem; } }
+@media screen and (min-width: 900px) {
+  /* desktop size */
+  header .greeting {
+    padding: 2% 0 8rem;
+    margin: 0 30%;
+    font-size: 1.85rem;
+    min-width: 39rem;
+    max-width: 43rem; }
+
+  main .deck {
+    flex-direction: row; }
+  main .card {
+    width: 29%;
+    background-color: #aea7ff; } }
+
+/*# sourceMappingURL=s.css.map */
