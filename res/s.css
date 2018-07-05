@@ -52,9 +52,10 @@ header {
         box-decoration-break: clone; }
 
 main {
-  height: 400px;
+  height: 100%;
   color: #e0e0e0;
-  background-color: #282C34; }
+  background-color: #282C34;
+  padding-bottom: 2rem; }
   main .deck {
     margin: 0 auto;
     max-width: 900px;
@@ -64,10 +65,33 @@ main {
     justify-content: space-between;
     justify-content: space-evenly; }
   main .card {
+    box-shadow: 0 15px 24px rgba(174, 167, 255, 0.22), 0 19px 76px rgba(0, 0, 0, 0.3);
     max-width: 100%;
     padding: 0.66rem;
     margin: 0 10px 20px 10px;
-    background-color: #aea7ff; }
+    background-color: #3f4552;
+    font-family: LiberationSansRegular, serif, Arial, Helvetica, sans-serif;
+    text-align: justify; }
+
+h2, h3 {
+  margin-top: 0;
+  padding: 10px 0;
+  text-align: center;
+  font-family: LiberationSansBold, Arial, Helvetica, sans-serif; }
+
+footer {
+  text-align: center;
+  background-color: #aea7ff; }
+  footer h3 {
+    font-size: 1.55rem; }
+  footer p {
+    margin-bottom: 0;
+    padding-bottom: 10px;
+    font-family: LiberationSansRegular, serif, Arial, Helvetica, sans-serif;
+    font-size: 1.33rem; }
+  footer a {
+    color: #282C34;
+    text-decoration: underline; }
 
 @media screen and (min-width: 480px) {
   /* BIG phone size */
@@ -98,7 +122,6 @@ main {
   main .deck {
     flex-direction: row; }
   main .card {
-    width: 29%;
-    background-color: #aea7ff; } }
+    width: 29%; } }
 
 /*# sourceMappingURL=s.css.map */
