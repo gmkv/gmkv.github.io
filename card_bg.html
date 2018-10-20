@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="bg">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,10 +7,8 @@
     <link rel="stylesheet" href="res/normalize.css">
     <link rel="stylesheet" href="res/med/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-    
     <title>Медицинска карта за незабавна помощ</title>
 </head>
-
 <body>
     <header>
         <nav class="navbar navbar-light bg-light">
@@ -26,31 +23,34 @@
     </div>
     <main class="container-fluid">
         <div class="card">
-                <h5 class="card-header"><strong>Вие сте сканирали кода на човек с диабет тип 2</strong></h5>
-                <div class="card-body">
-                    <p class="card-text">Вероятно човекът е или неориeнтиран, или неадекватен, или е припаднал. Моля, следвайте инструкциите:</p>
+            <h5 class="card-header"><strong>Вие сте сканирали кода на човек с диабет тип 2</strong></h5>
+            <div class="card-body">
+                <p class="card-text">Вероятно човекът е или неориeнтиран, или неадекватен, или е припаднал. Моля, следвайте инструкциите:</p>
+                <div class="block text-right">
+                    <audio id="narration" src="./112.mp3" preload="auto"></audio>
+                    <a href="#" onClick="togglePlay()">
+                        <i class="fas fa-volume-up"></i>
+                        <em>(аудио вариант)</em>
+                    </a>
                 </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Обадете се на спешна помощ и кажете, че човекът е с диабет тип 2.</li>
-                        <li class="list-group-item">Вижте в десния му джоб дали има пакетче захар и я изсипете в устата му.</li>
-                        <li class="list-group-item">Това ще помогне за преодоляване на вероятна хипогликемичната криза, в която е изпаднал, макар и по-бавно – до 10 минути. Ако причината за припадъка не е тази, захарта няма да навреди.</li>
-                        <li class="list-group-item">Когато пристигне медицинския екип, съобщете за пакетчето захар.</li>
-                    </ul>
-         
-              </div>
-
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Обадете се на спешна помощ и кажете, че човекът е с диабет тип 2.</li>
+                <li class="list-group-item">Вижте в десния му джоб дали има пакетче захар и я изсипете в устата му.</li>
+                <li class="list-group-item">Това ще помогне за преодоляване на вероятна хипогликемичната криза, в която е изпаднал, макар и по-бавно – до 10 минути. Ако причината за припадъка не е тази, захарта няма да навреди.</li>
+                <li class="list-group-item">Когато пристигне медицинския екип, съобщете за пакетчето захар.</li>
+            </ul>
+        </div>
     </main>
+    <footer style="margin-top: 15px;">
+        <script>
+            var narration = document.getElementById("narration");
+            
+            function togglePlay() {
+                return narration.paused ? narration.play() : narration.pause();
+            }
+
+        </script>
+    </footer>
 </body>
-
 </html>
-<!-- .
-
-
-
- .
-
-.
-
-
-
-.  -->
