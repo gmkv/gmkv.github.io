@@ -1,0 +1,25 @@
+header {
+  background: linear-gradient(180deg, #aea7ff 0%, #aea7ff 10%, #282c34 100%);
+  nav {
+    font-family: 'arial';
+    font-size: 1.3rem;
+    ul {
+      max-width: 23rem;
+      margin: 0 auto;
+      padding: 1rem 0; // WIP - have to change the media queries to respond to the breakpoints
+      list-style: none outside;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      justify-content: space-evenly;
+      li {
+        a {
+          font-family: $font-stack-text;
+          display: inline-block;
+          background-color: $background-color;
+          padding: 0.66rem 1rem;
+        }
+      }
+    }
+  }
+}

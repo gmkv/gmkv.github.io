@@ -1,0 +1,15 @@
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+
+a {
+  text-decoration: none;
+  color: $link-color;
+  transform: all 0.3s linear;
+
+  &:hover {
+    text-decoration: underline;
+    color: darken($link-color, 20%);
+  }
+}
