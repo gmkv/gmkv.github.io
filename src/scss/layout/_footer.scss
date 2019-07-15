@@ -1,19 +1,21 @@
 footer {
   text-align: center;
   background-color: $card-background;
+  $footer-text-color: lighten($card-background, 10%);
 
   .licence {
     margin: 0;
     padding: 1rem 2rem;
     font-family: $font-text;
-    font-size: 0.9rem;
-
+    font-size: 0.85rem;
+    color: $footer-text-color;
     img {
       opacity: 0.4;
     }
 
     a {
       border: 0;
+      color: mix($footer-text-color, $primary-color, 35%);
       &:hover {
         color: $primary-color;
       }
