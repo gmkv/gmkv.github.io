@@ -36,36 +36,57 @@
 
 .deck {
   margin: 0 auto;
-  max-width: 900px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  justify-content: space-evenly;
+  max-width: $xl;
 
-  @media screen and (min-width: 480px) {
-    & {
-      flex-direction: column;
-    }
+  @media screen and (min-width: $lg) {
+    display: flex;
+    justify-content: space-between;
   }
-
-  @media screen and (min-width: 960px) {
-    flex-direction: row; // for desktop n tablet
-  }
-
   .card {
-    @include card(5);
-    max-width: 100%;
-    padding: 0.66rem;
-    margin: 0 10px 20px 10px;
+    // @include card(5);
+    // max-width: 100%;
+    padding: 2rem 1rem;
+    border-radius: 4px;
+    line-height: 1.4;
+    margin: 0 0 1.3rem;
     background-color: $card-background;
-    font-family: $font-stack-text;
-    text-align: justify;
+    font-family: $font-text;
+
+    @media (min-width: $sm) {
+      padding: 3rem 2rem;
+      margin: 0 1rem 2rem;
+    }
+
+    @media (min-width: $md) and (max-width: $lg) {
+      padding: 3rem 4rem;
+      margin: 0 2rem 3rem;
+    }
+
+    @media (min-width: $lg) {
+      width: 32%;
+      margin: 0 1.33rem 0 0;
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
 
     &__title {
-      padding: 2rem 0.5rem;
-      text-align: center;
-      font-family: $font-stack-text;
+      text-align: left;
+      font-family: $font-header;
       font-weight: 700;
+      font-size: 1.5rem;
+      margin: 0;
+
+      @media (min-width: $sm) {
+        margin-bottom: 0.5rem;
+      }
+    }
+
+    &__text {
+      padding: 0;
+      margin: 0;
+      font-size: 1.1rem;
+      text-align: justify;
     }
   }
 }

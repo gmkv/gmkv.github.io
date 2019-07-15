@@ -1,0 +1,26 @@
+.about {
+  padding-top: 2rem;
+  position: relative;
+
+  &__title {
+    position: absolute;
+    text-align: center;
+    left: 1rem;
+    top: 0.4rem;
+    line-height: 1;
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0;
+
+    @media (min-width: $sm) {
+      left: 3rem;
+    }
+    @media (min-width: $md) and (max-width: $lg) {
+      left: 6rem;
+    }
+  }
+
+  @media (min-width: $lg) {
+    margin-bottom: 2rem;
+  }
+}

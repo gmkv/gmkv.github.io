@@ -1,24 +1,74 @@
-header {
-  background: linear-gradient(180deg, #aea7ff 0%, #aea7ff 10%, #282c34 100%);
-  nav {
-    font-family: 'arial';
-    font-size: 1.3rem;
-    ul {
-      max-width: 23rem;
-      margin: 0 auto;
-      padding: 1rem 0; // WIP - have to change the media queries to respond to the breakpoints
-      list-style: none outside;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      justify-content: space-evenly;
-      li {
-        a {
-          font-family: $font-stack-text;
-          display: inline-block;
-          background-color: $background-color;
-          padding: 0.66rem 1rem;
-        }
+.header {
+  background: url("/public/img/gmkv.png") no-repeat 100% bottom, linear-gradient(180deg, $primary-color 0%, $background-color 100%);
+  background-size: 90%;
+  height: 290px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 100px;
+  box-shadow: inset 0 -10px 20px -10px $background-color;
+
+  @media (min-width: 350px) {
+    background-size: 70%;
+    height: 330px;
+  }
+  @media (min-width: 420px) {
+    height: 370px;
+  }
+  @media (min-width: $sm) {
+    height: 400px;
+    background-position: 90% bottom;
+    background-size: 400px;
+  }
+  @media (min-width: $md) {
+    background-position: 80% bottom;
+    height: 450px;
+  }
+  @media (min-width: $lg) {
+    background-position: 70% bottom;
+  }
+
+  .greeting {
+    position: relative;
+    bottom: -80px;
+    color: $text-color;
+    line-height: 1;
+    font-weight: 400;
+    padding: 1rem;
+    margin: 0 auto;
+    font-size: 1.2rem;
+
+    @media (min-width: 350px) {
+      font-size: 1.5rem;
+    }
+
+    @media (min-width: $sm) {
+      bottom: 0%;
+      left: -10%;
+      max-width: 400px;
+      font-size: 1.6rem;
+      line-height: 1.1;
+    }
+    @media (min-width: $md) {
+      font-size: 1.9rem;
+      max-width: 420px;
+      transform: translateY(-25%);
+    }
+
+    span {
+      display: block;
+      font-weight: 700;
+      font-size: 2.4rem;
+
+      @media (min-width: 350px) {
+        font-size: 2.7rem;
+      }
+
+      @media (min-width: $sm) {
+        font-size: 3rem;
+      }
+      @media (min-width: $md) {
+        font-size: 3.3rem;
       }
     }
   }

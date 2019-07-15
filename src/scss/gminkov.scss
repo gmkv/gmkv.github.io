@@ -1,52 +1,8 @@
-@font-face {
-  font-family: LiberationSansBold;
-  src: url("/public/css/fonts/LiberationSans-Bold.ttf");
-}
-
-@font-face {
-  font-family: LiberationSansRegular;
-  src: url("/public/css/fonts/LiberationSans-Regular.ttf");
-}
-
-$font-stack-text: LiberationSansRegular, serif, Arial, Helvetica, sans-serif;
-$font-stack-header: LiberationSansBold, Arial, Helvetica, sans-serif;
-
-$background-color: #282c34;
-$text-color: #e0e0e0;
-$primary-color: #aea7ff;
-$link-color: darken($primary-color, 20%);
-$card-background: #3f4552;
-
 @import "utilities/common";
+
 @import "layout/header";
 @import "layout/footer";
+
+@import "components/about";
 @import "components/card";
-@import "components/hero";
-
-main {
-  height: 100%;
-  color: $text-color;
-  background-color: $background-color;
-  padding-bottom: 2rem;
-}
-
-@media screen and (min-width: 900px) {
-  /* desktop size */
-  header {
-    .greeting {
-      padding: 2% 0 8rem;
-      margin: 0 30%;
-      font-size: 1.85rem;
-      min-width: 39rem;
-      max-width: 43rem;
-    }
-  }
-  main {
-    .deck {
-      flex-direction: row;
-    }
-    .card {
-      width: 29%;
-    }
-  }
-}
+@import "components/contact";

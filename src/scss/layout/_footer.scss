@@ -1,17 +1,22 @@
 footer {
   text-align: center;
-  background-color: $primary-color;
+  background-color: $card-background;
 
   .licence {
-    p {
-      margin-bottom: 0;
-      padding-bottom: 10px;
-      font-family: $font-stack-text;
-      font-size: 1.33rem;
+    margin: 0;
+    padding: 1rem 2rem;
+    font-family: $font-text;
+    font-size: 0.9rem;
+
+    img {
+      opacity: 0.4;
     }
+
     a {
-      color: $background-color;
-      text-decoration: underline;
+      border: 0;
+      &:hover {
+        color: $primary-color;
+      }
     }
   }
 }
