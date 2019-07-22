@@ -21,6 +21,7 @@ body {
   color: $text-color;
   font-family: $font-text;
   font-size: 100%;
+  overflow-x: hidden;
 }
 
 main {
