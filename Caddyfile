@@ -1,0 +1,4 @@
+gmkv.software, gminkov.com {
+    gzip
+    log ../log/access.log
+}
